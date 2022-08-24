@@ -11,18 +11,18 @@ $mostrar_error = true;
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Cheqeuo servidor">
 if ($_SERVER['SERVER_NAME'] == "www.condominioflamingo.com.ve" | $_SERVER['SERVER_NAME'] == "condominioflamingo.com.ve") {
-    $user = "flamingo_root";
-    $password = "flamingo5231";
-    $db = "valoriza2_flamingo";
+    $user = "";
+    $password = "";
+    $db = "";
     //$db = "octagon";
     $email_error = true;
     $mostrar_error = false;
     $debug = false;
     $sistema = "/";
 } else {
-    $user = "root";
+    $user = "";
     $password = "";
-    $db = "valoriza2_flamingo";
+    $db = "";
 }
 
 // </editor-fold>
@@ -110,8 +110,7 @@ define("ARCHIVO_ACTUALIZACION","ACTUALIZACION.txt");
 define("SMTP_SERVER","mail.condominioflamingo.com.ve");
 define("PORT",25);
 define("USER_MAIL","info@condominioflamingo.com.ve");
-//define("PASS_MAIL","Famingo123+");
-define("PASS_MAIL","flamingo5231");
+define("PASS_MAIL","");
 define("MESES_COBRANZA",4);
 define("GRAFICO_FACTURACION",1);
 define("GRAFICO_COBRANZA",1);
