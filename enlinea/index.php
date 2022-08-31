@@ -26,6 +26,7 @@ if ($propiedades['suceed'] == true) {
 }
 
 switch ($accion) {
+ 
     default :
         echo $twig->render('enlinea/index.html.twig', array(
             "session" => $session,
