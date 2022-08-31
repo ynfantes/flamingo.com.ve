@@ -4,8 +4,8 @@ AddCharset utf-8 .html
 Options +FollowSymLinks
 RewriteEngine on
 
-#RewriteCond %{HTTP_HOST} ^condominioflamingo.com.ve
-#RewriteRule (.*) http://www.condominioflamingo.com.ve/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^condominioflamingo.com.ve
+RewriteRule (.*) http://www.condominioflamingo.com.ve/$1 [R=301,L]
 
 
 Rewriterule ^enlinea/([A-Za-z\-]+)/([A-Za-z\-]+)$ enlinea/$1/index.php?accion=$2 [L]
